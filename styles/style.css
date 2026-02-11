@@ -1,1 +1,344 @@
-/* место для вашего кода */
+body {
+  font-family: "Raleway", "Inter", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 90px 50px 96px 50px;
+}
+
+.header__logo {
+  width: 140px;
+  height: 104px;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  padding: 165px 50px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  z-index: 0;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 106px;
+  gap: 20px;
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.cover__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  z-index: 2;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 390px;
+  list-style: circle;
+}
+
+.text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.address {
+  max-width: 232px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aligned-text_left {
+  margin-right: auto;
+}
+
+.aligned-text_center {
+  margin: auto;
+  letter-spacing: 19px;
+
+}
+
+.aligned-text_right {
+  margin-left: auto;
+  letter-spacing: 22px;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  height: auto;
+  width: auto;
+  color: white;
+  padding: 12px 32px;
+  background: transparent;
+  border: 1px solid white;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: medium;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.lots {
+  display: flex;
+  flex-direction: column;
+  margin: 180px 24px 120px 24px;
+  position: relative;
+  z-index: 0;
+}
+
+.lots__heading {
+  padding: 0px 891px 27px 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.lots__card-list-item {
+  position: relative;
+  min-height: 596px;
+  min-width: 334px;
+  list-style-type: none;
+}
+
+.card-link {
+  height: 100%;
+  z-index: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px 48px 40px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.lots__heading {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card__title {
+  position: relative;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.card__text {
+  position: relative;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  z-index: 1;
+}
+
+.lots__look-more-link {
+  margin-left: 40px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.overlay {
+  background-color: #000;
+  background-size: cover;
+  opacity: 0.6;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  gap: 25px;
+  box-sizing: border-box;
+  margin: 120px 24px 180px 24px;
+}
+
+.about__logo {
+  display: flex;
+  padding-top: 35px;
+  justify-content: center;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  padding-top: 133px;
+}
+
+.about__title {
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+
+.about__description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__logo__color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 240px;
+  width: 240px;
+  height: 240px;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.logo__socials {
+  width: 48px;
+  height: 48px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
+  box-sizing: border-box;
+  padding: 0px 50px 82px 50px;
+}
+
+.footer address {
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
