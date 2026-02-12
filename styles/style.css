@@ -11,7 +11,7 @@ body {
 }
 
 .header__logo {
-  width: 140px;
+  width: 138px;
   height: 104px;
 }
 
@@ -36,7 +36,7 @@ body {
   width: auto;
   height: auto;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -59,28 +59,33 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 10px;
+  gap: 8px;
   width: 390px;
   list-style: circle;
 }
 
+.header__link.active {
+  text-decoration: none;
+}
+
 .text {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 24px;
 }
 
 .links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.address {
-  max-width: 232px;
+address {
+  max-width: 236px;
   justify-self: end;
   display: flex;
+  gap: 8px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -91,18 +96,21 @@ body {
 
 .aligned-text_center {
   margin: auto;
-  letter-spacing: 19px;
+  letter-spacing: 32px;
+}
 
+.aligned-text_last-letters {
+  letter-spacing: 15px;
 }
 
 .aligned-text_right {
   margin-left: auto;
-  letter-spacing: 22px;
+  letter-spacing: 30px;
 }
 
 .cover__description-text {
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -117,8 +125,8 @@ body {
   color: white;
   padding: 12px 32px;
   background: transparent;
-  border: 1px solid white;
-  font-family: Raleway;
+  border: 1px solid currentColor;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 22px;
   font-style: medium;
   font-weight: 400;
@@ -167,29 +175,25 @@ body {
   width: 100%;
   height: 100%;
   padding: 48px 40px 48px 40px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__heading {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -200,7 +204,7 @@ body {
 .card__title {
   position: relative;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -218,18 +222,18 @@ body {
 .card__text {
   position: relative;
   color: #fff;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: 24px;
   z-index: 1;
 }
 
 .lots__look-more-link {
   margin-left: 40px;
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -267,7 +271,7 @@ body {
 
 .about__title {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -278,7 +282,7 @@ body {
 
 .about__text {
   color: #000;
-  font-family: Raleway;
+  font-family: "Raleway", "Inter", system-ui, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -312,8 +316,9 @@ body {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 0px 50px 82px 50px;
 }
@@ -329,6 +334,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__menu-link.active {
+  text-decoration: none;
 }
 
 .footer__social-list {

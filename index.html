@@ -13,11 +13,8 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li
-            class="text links-list-item_no-bullit header__links-list-item"
-            class="header__link_active"
-          >
-            главная
+          <li class="text links-list-item_no-bullit header__links-list-item">
+            <a href="#" class="header__link active">главная</a>
           </li>
           <li class="text links-list-item">
             <a href="#" class="header__link">посмотреть лоты</a>
@@ -28,9 +25,9 @@
         </ul>
       </nav>
       <a class="header__logo">
-        <img src="images/logo-black.svg" />
+        <img src="images/logo-black.svg" alt="логотип" />
       </a>
-      <address class="address">
+      <address>
         <ul>
           <li class="text links-list-item_no-bullit">
             <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -49,26 +46,30 @@
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text_left">Оно</span>
-          <span class="aligned-text_center">тебе</span>
-          <span class="aligned-text_right">надо</span>
+          <span class="aligned-text_center"
+            >те<span class="aligned-text_last-letters">бе</span></span
+          >
+          <span class="aligned-text_right"
+            >на<span class="aligned-text_last-letters">до</span></span
+          >
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <button type="submit" class="bet-button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
-        <h3 class="lots__heading">Лоты</h3>
+        <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <div class="overlay"></div>
             <a class="card-link" href="#">
               <article class="card card_type_film">
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h4>
+                </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -81,9 +82,9 @@
             <div class="overlay"></div>
             <a class="card-link" href="#">
               <article class="card card_type_book">
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h4>
+                </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -99,9 +100,9 @@
             <div class="overlay"></div>
             <a class="card-link" href="#">
               <article class="card card_type_picture">
-                <h4 class="card__title">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h4>
+                </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -117,11 +118,15 @@
       <section class="about">
         <div class="about__logo">
           <div class="about__logo__color">
-            <img src="images/logo-white.svg" class="about__logo-image" />
+            <img
+              src="images/logo-white.svg"
+              class="about__logo-image"
+              alt="логотип"
+            />
           </div>
         </div>
         <div class="about__column">
-          <h3 class="about__title">Об аукционе</h3>
+          <h2 class="about__title">Об аукционе</h2>
           <div class="about__description">
             <p class="about__text">
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -144,7 +149,7 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address">
+      <address>
         <ul>
           <li class="text links-list-item_no-bullit">
             <a href="tel:+99995555555">+9 999 555 5555</a>
@@ -159,11 +164,8 @@
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li
-            class="text links-list-item_no-bullit"
-            class="header__link_active"
-          >
-            главная
+          <li class="text links-list-item_no-bullit">
+            <a href="#" class="footer__menu-link active">главная</a>
           </li>
           <li class="text links-list-item_no-bullit">
             <a href="#" class="footer__menu-link">посмотреть лоты</a>
@@ -176,17 +178,29 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a class="footer__social-link">
-            <img src="images/yt.svg" class="footer__social-icon" />
+            <img
+              src="images/yt.svg"
+              class="footer__social-icon"
+              alt="иконка ютуб"
+            />
           </a>
         </li>
         <li class="footer__social-list-item">
           <a class="footer__social-link">
-            <img src="images/vk.svg" class="footer__social-icon" />
+            <img
+              src="images/vk.svg"
+              class="footer__social-icon"
+              alt="иконка вконтакте"
+            />
           </a>
         </li>
         <li class="footer__social-list-item">
           <a class="footer__social-link">
-            <img src="images/pinterest.svg" class="footer__social-icon" />
+            <img
+              src="images/pinterest.svg"
+              class="footer__social-icon"
+              alt="иконка пинтерест"
+            />
           </a>
         </li>
       </ul>
